@@ -90,7 +90,7 @@ To build and run:
 docker compose up
 ```
 
-After some setup and installation logs, the application should output its evaluation:
+After some setup and installation log entries, the application should output its evaluation:
 
 ```
 sentiment-app-1  | Sentiment: The sentiment of the text is: Positive
@@ -99,6 +99,8 @@ sentiment-app-1  | Sentiment: The sentiment of the text is: Positive
 Now try updating the text file to produce a negative or neutral review.
 
 You have now built a simple POC (proof of concept) that evaluates text data using Generative AI. It should be obvious how this could extend to far more complex scenarios.
+
+Reflect on the options below, select one, and sketch out for yourself how you would update this application for that scenario.
 
 ## Extend
 
