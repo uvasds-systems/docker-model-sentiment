@@ -52,7 +52,13 @@ MODEL NAME  PARAMETERS  QUANTIZATION    ARCHITECTURE  MODEL ID      CREATED     
 llama3.2    3.21 B      IQ2_XXS/Q4_K_M  llama         436bb282b419  11 months ago           1.87 GiB
 ```
 
-Just like container images, you can delete models using `rm`:
+To pull any model from [:hugs: **HuggingFace**](https://huggingface.co/models), use the `hf.co` host:
+
+```
+docker model pull hf.co/zai-org/GLM-OCR
+```
+
+Just like container images, you can delete local models using `rm`:
 
 ```
 docker model rm llama3.2
