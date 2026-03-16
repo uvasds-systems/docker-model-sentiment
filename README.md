@@ -4,6 +4,8 @@ Use Docker Model Runner to perform basic sentiment analysis with a local Large L
 
 Docker can be used to pull and run LLMs alongside normal containerized applications. This greatly reduces the complexity around model operations and management.
 
+Docker Model Runner does not run models within containers, which would interfere with hardware resources that LLMs require, but instead manages and runs models on the host machine running Docker. Models are made available through the Docker socket or as an internal URL.
+
 ## Set Up
 
 1. Create your own [**fork**](https://github.com/uvasds-systems/docker-model-sentiment/fork) of this repo to work with.
