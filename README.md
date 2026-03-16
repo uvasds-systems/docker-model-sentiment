@@ -88,15 +88,15 @@ The `data` payload on lines 17-22 follows an OpenAI-style schema. In this case `
 
 Notice the environment variables required for the application to run.
 
-## Review the `Dockerfile` 
+### Review the `Dockerfile` 
 
 See how the container image is built for the code. Note that the only Python package is installed directly, not via a `requirements.txt` file.
 
-## Review `docker-compose`
+### Review `docker-compose`
 
 Observe that two services and one model will be run via Docker Compose. Since Docker Model Runner models are not automatically pulled by Compose, the first service is used to pull the specified model, before the real application container takes over to consume the model.
 
-## Add Contents to the Text File
+### Add Contents to the Text File
 
 Edit `input_text.txt` and insert content that has a strongly positive review or comment on something:
 
@@ -104,7 +104,7 @@ Edit `input_text.txt` and insert content that has a strongly positive review or 
 
 Save the file. You are now ready to run the application against the model to determine its sentiment.
 
-## Build and Run
+### Build and Run
 
 To build and run:
 ```
