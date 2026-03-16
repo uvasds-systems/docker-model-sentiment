@@ -1,0 +1,22 @@
+services:
+
+  model-puller:
+    image: alpine
+    entrypoint: ["/bin/sh", "-c"]
+    command: >
+      "apk add --no-cache curl && curl -s --unix-socket /var/run/docker.sock http://localhost/models/pull -X POST -H 'Content-Type: application/json' -d '{\"model\": \"ai/llama3.2\"}' || true"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  sentiment-app:
+    build: .
+    depends_on:
+      model-puller:
+        condition: service_completed_successfully
+    environment:
+      LLM_URL: http://model-runner.docker.internal/engines/llama.cpp/v1
+      LLM_MODEL: ai/llama3.2:latest
+
+models:
+  llm:
+    model: ai/llama3.2:latest
+
