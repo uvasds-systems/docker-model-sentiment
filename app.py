@@ -40,4 +40,3 @@ if __name__ == "__main__":
             print("File is empty.")
     else:
         print(f"File not found: {FILE_PATH}")
-

@@ -4,4 +4,3 @@ RUN pip install requests
 COPY app.py .
 COPY input_text.txt .
 CMD ["python", "app.py"]
-
