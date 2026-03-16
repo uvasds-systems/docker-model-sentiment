@@ -42,6 +42,18 @@ Type `/exit` to leave the chat.
 
 ## Manage Models
 
+Search across models in Docker Hub or HuggingFace with
+
+```
+docker model search llama
+```
+
+Then pull a specific one:
+
+```
+docker model pull ai/llama3.2
+```
+
 You can pull multiple models to your workstation, and then specify which one you want to use for a given solution. [**Read more**](https://docs.docker.com/ai/model-runner/).
 
 To see what models are available locally, list them:
