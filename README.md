@@ -6,10 +6,11 @@ Docker can be used to pull and run LLMs alongside normal containerized applicati
 
 ## Set Up
 
-1. Open **Docker Desktop** on your local computer and go to **Settings**.
-2. Find the **AI** panel and enable **Docker Model Runner**.
-3. You may need to restart Docker for these changes to take effect.
-4. On Linux with Docker Engine (Docker CE), install the Docker Model Runner plugin/extension by following the official instructions: [Get started with Docker Model Runner on Linux](https://docs.docker.com/ai/model-runner/get-started).
+1. Create your own [**fork**](https://github.com/uvasds-systems/docker-model-sentiment/fork) of this repo to work with.
+2. Open **Docker Desktop** on your local computer and go to **Settings**.
+3. Find the **AI** panel and enable **Docker Model Runner**.
+4. You may need to restart Docker for these changes to take effect.
+5. On Linux with Docker Engine (Docker CE), install the Docker Model Runner plugin/extension by following the official instructions: [Get started with Docker Model Runner on Linux](https://docs.docker.com/ai/model-runner/get-started).
 
 ## Pull a Model and Test
 
